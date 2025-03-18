@@ -8,7 +8,6 @@ watchlist = []
 
 
 def get_user_rating():
-    """ Pobiera ocenę użytkownika. """
     movie_id = input("Enter movie ID: ")
     rating = int(input("Rate the movie on a scale from 1 to 5: "))
 
@@ -21,14 +20,12 @@ def get_user_rating():
 
 
 def add_to_watchlist():
-    """ Dodaje film do listy do obejrzenia. """
     movie_id = input("Enter movie ID to add to watchlist: ")
     watchlist.append(movie_id)
     print(f"Movie {movie_id} added to your watchlist.")
 
 
 def view_watchlist():
-    """ Wyświetla listę filmów zapisanych do obejrzenia. """
     if not watchlist:
         print("Your watchlist is empty.")
     else:
@@ -42,7 +39,6 @@ def view_watchlist():
 
 
 def view_ratings():
-    """ Wyświetla ocenione filmy. """
     if not user_ratings:
         print("You have not rated any movies yet.")
     else:
@@ -56,7 +52,6 @@ def view_ratings():
 
 
 def recommend_movie():
-    """ Rekomenduje film na podstawie ocenionych pozycji. """
     if not user_ratings:
         print("No ratings yet. Rate a movie first to get recommendations.")
         return
