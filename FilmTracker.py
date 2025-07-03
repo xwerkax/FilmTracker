@@ -69,7 +69,7 @@ def recommend_movie():
         print("No recommendations available.")
 
 
-# Main Program Loop
+
 while True:
     print("\nOptions:")
     print("1. Rate a movie")
